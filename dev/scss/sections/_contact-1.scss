@@ -1,0 +1,42 @@
+#contact-1{
+    #container{
+        border: 20px solid $blue;
+        grid-area: c;
+        ul{
+            margin: 20% 0 0 15%;
+            li{
+                color: $red;
+                font-size: 4em;
+            }
+        }
+        img{
+            width: 20%;
+            transform: rotate(180deg);
+            margin:0 5% -1% 75%;
+        }
+        p{
+            font-size: 2em;
+            margin-top: 30%;
+        }
+    }
+    display: grid;
+    grid-template-columns: 85% auto;
+    grid-template-areas: "c .";
+}
+#contact-2{
+    #map{
+        width: 100%;
+        height: 450px;
+        background-color:$red;
+        
+        @include md{
+            height: 500px;
+        }
+        @include lg{
+            height: 600px;
+        }
+        @include xl{
+            height: 700px;
+        }
+    }
+}

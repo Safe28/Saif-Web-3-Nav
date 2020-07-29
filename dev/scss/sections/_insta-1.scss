@@ -1,0 +1,29 @@
+#insta-1{
+    margin: 5% 3%;
+    #title {
+        display: flex;
+        justify-content: center;
+
+        h2 {
+            font-size: 1em;
+            margin-bottom: 5%;
+            color: $gray;
+        }
+
+        #photo {
+            border-bottom: 4px solid $blue;
+            color: $blue !important;
+            margin-left: 3%;
+        }
+    }
+    #gallery{
+        grid-area: g;
+    }
+    #title{
+        grid-area: t;
+    }
+    display: grid;
+    grid-template-columns: 3% auto 3%;
+    grid-template-areas: ". t ."
+    ". g .";
+}

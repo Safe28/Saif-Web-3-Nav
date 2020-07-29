@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@600;700;900&display=swap" rel="stylesheet">
+     <!-- Font Awesome --><script src="https://kit.fontawesome.com/71aceb4ab0.js" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/db8be9eca2.js" crossorigin="anonymous"></script>
+     <!-- FancyBox -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+     <!-- TinySlider -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
+     <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.helper.ie8.js"></script><![endif]-->
+     
+    <link rel="stylesheet" href="css/styles.css">
+    <title>S/E Portfolio</title>
+</head>
+
+<body>
+
+    <header class="grid-container">
+        <div>
+            <section id="logo-container">
+                <a href="index.html"><img src="img/header/logo.svg" alt="logo"></a>
+            </section>
+    
+            <section id="burger-container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="47px" height="40px" viewBox="0 0 47 29" id="burger">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="lines" stroke="#000" stroke-width="6">
+                            <path id="bottom-line" d="M4.5 24.5h38" class="lines" />
+                            <path id="middle-line" d="M4.5 14.5h38" class="lines" />
+                            <path id="top-line" d="M4.5 4.5h38" class="lines" />
+                        </g>
+                    </g>
+                </svg>
+    
+            </section>
+        </div>
+    </header>
+      
+    <nav id="main-nav">
+        <ul>
+    
+            <li class= "show-nav hide-nav" ><button><a href="index.html#section-3"></a><i class="fas fa-spinner"></i>Work in Progress</a></button></li>
+    
+            <li><a href="index.html"><i class="fas fa-home"></i>index</a></li>
+            <li><a href="portfolio.html"><i class="fas fa-paint-brush"></i>Portfolio</a></li>
+            <li><a href="contact.html"><i class="fas fa-user-alt"></i>null</a></li>
+            <li><a href="contact-1.html"><i class="fas fa-envelope"></i></i>Contact</a></li>
+        </ul>
+    </nav>
+    <section id="contact-1">
+            <div id="container">
+                <ul>
+                    <li><i class="fab fa-instagram-square"></i></li>
+                    <li><i class="fab fa-linkedin"></i></li>
+                    <li><i class="fab fa-behance-square"></i></li>
+                    <li><i class="fas fa-envelope-square"></i></li>
+                </ul>
+                <p>Email: sme87@drexel.edu</p>
+                <img src="img/contact/hand.svg">
+                
+            </div>
+        </section>
+        <section id="contact-2">
+            <div id="map">
+        
+            </div>
+        </section>
+    <footer class="grid-container">
+                <div>
+                    <h1>Sign Up!</h1>
+                    <form action="https://formspree.io/xrgyonqb" method="POST">
+                        <section>
+                            <div>
+                                <input id="name" type="text" placeholder="Name" name="Name">
+                            </div>
+                            <div>
+                                <select id="language" name="Language">
+                                    <option value="English">Eng</option>
+                                    <option value="Spanish">spa</option>
+                                    <option value="German">Ger</option>
+                                  </select>
+                            </div>
+                            <div>
+                                <input type="email" placeholder="Email" name="Email">
+                                <button type="submit" value="Send"><i class="fas fa-chevron-right"></i></button>
+                            </div>    
+                        </section>
+                    </form>
+                    <ul>
+                        <li><a href="https://twitter.com/explore"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/home?trk=logo"><i class="fab fa-linkedin-in"></i></i></a></li>
+                        <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="http://be.net/saifelkhamry"><i class="fab fa-behance"></i></a></li>
+                    </ul>
+                </div>
+            </footer>
+
+  <script>
+// Initialize and add the map
+function initMap() {
+        // Styles a map in night mode.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 39.956808, lng: -75.189937},
+          zoom: 14,
+          hide:[{
+            featureType:
+            "road.highway",
+            stylers:[{
+              visibility: "off"
+            }]
+          }],
+          
+          styles: [
+            {elementType: 'geometry', stylers: [{color: '#AB9B78'}]},
+            {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+            {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+            {
+              featureType: 'administrative.locality',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'poi',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'geometry',
+              stylers: [{color: '#614B35'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#6b9a76'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry',
+              stylers: [{color: '#614B35'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#614B35'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#9ca5b3'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry',
+              stylers: [{color: '#614B35'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#1f2835'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#614B35'}]
+            },
+            {
+              featureType: 'transit',
+              elementType: 'geometry',
+              stylers: [{color: '#2f3948'}]
+            },
+            {
+              featureType: 'transit.station',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'geometry',
+              stylers: [{color: '#92A8D1'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#515c6d'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.stroke',
+              stylers: [{color: '#17263c'}]
+            }
+          ]
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGqmY8ZpIgLPaAS6sttrrJQLTF051FvJo&callback=initMap">
+    </script>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Greensock Scroll To Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollToPlugin.min.js"></script>
+    <!-- Greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/gsap.min.js"></script>
+    <!-- fancyBox -->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <!-- Tiny Slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    
+    <script src="js/scripts-min.js"></script>       
+</body>
+
+</html>

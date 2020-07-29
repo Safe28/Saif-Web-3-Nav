@@ -1,0 +1,50 @@
+/* =============
+    Section 3
+============= */
+#section-3 {
+    background-color: #F1F1F1;
+    padding-bottom: 5%;
+    padding-top: 5%;
+
+    #title {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10%;
+        padding-top: 5%;
+
+        .line {
+            width: 20%;
+            height: 8px;
+            background-color: $blue;
+            margin: 10px 5px 0 5px;
+        }
+
+        h3 {
+            color: $blue;
+            font-size: 1.5em;
+        }
+    }
+
+    #gallery {
+        position: relative;
+        text-align: center;
+
+        img {
+            width: 100%;
+        }
+
+
+        .my-slider {
+            img {
+                object-fit: cover;
+                object-position: center;
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+    i {
+        color: $gray;
+        font-size: 5em;
+    }
+}

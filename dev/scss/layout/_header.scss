@@ -1,0 +1,50 @@
+/* =============
+    Header
+============= */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: $blue;
+    z-index: 100;
+
+    div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        #logo-container {
+            padding: 10px 0;
+
+            img {
+                width: 35px;
+                height: 35px;
+                @include md {
+                    width: initial;
+                }
+            }
+        }
+
+        #burger-container {
+            align-items: center;
+            display: flex;
+            justify-content: flex-end;
+
+            #burger{
+                cursor: pointer;
+                transition: 0.25s;
+
+                #lines{
+                    transition: 0.25s;
+                    stroke: #3A3A3C !important;
+                }
+
+                &:hover{
+                    #lines{
+                        stroke: #5C5C63 !important;
+                    }
+                }
+            }
+        }
+    }
+}

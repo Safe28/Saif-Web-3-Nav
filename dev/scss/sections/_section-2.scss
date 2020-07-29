@@ -1,0 +1,45 @@
+/* =============
+    Section 2
+============= */
+#section-2 {
+    background-image: url(../img/section-2/hero-2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 120vh;
+    margin: 7%;
+    position: relative;
+
+    h2 {
+        font-size: 2em;
+        text-align: right;
+        margin: 0 5% 0 20%;
+        padding-top: 5%;
+        color: $blue;
+    }
+
+    #bottom {
+        display: flex;
+        justify-content: center;
+
+        a {
+            position: absolute;
+            bottom: 25%;
+
+            p {
+                color: $white;
+                border: 7px solid $blue;
+                letter-spacing: 2px;
+                font-size: 2em;
+                padding: 5%;
+                width: fit-content;
+            }
+        }
+
+        img {
+            position: absolute;
+            bottom: 5%;
+            width: 5%;
+        }
+    }
+}
